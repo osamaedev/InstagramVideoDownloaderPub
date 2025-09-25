@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Material3.Button.ElevatedButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cornerRadius="8dp"
+    app:icon="@drawable/ic_instagram"
+    app:iconGravity="start"
+    app:iconSize="24dp"
+    app:iconTint="@null"
+    tools:text="Button Here" />

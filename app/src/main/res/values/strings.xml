@@ -1,0 +1,252 @@
+<resources>
+    <string name="app_name">InstaSaver</string>
+
+
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_explore">Explore</string>
+    <string name="bottom_nav_profiles">Profiles</string>
+    <string name="bottom_nav_settings">Settings</string>
+
+
+    <string name="title_home">Home</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_profiles">Profiles</string>
+    <string name="title_settings">Settings</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="open_instagram">Open Instagram</string>
+
+
+    <string name="loading_message">Please wait…</string>
+
+
+    <string name="tab_explore_explore">Explore</string>
+    <string name="tab_explore_like">Like</string>
+    <string name="tab_explore_collection">Collection</string>
+    <string name="failed_to_load">Failed to load!</string>
+    <string name="retry">Retry</string>
+    <string name="explore_no_items_found">No Posts were found</string>
+    <string name="collection_no_items_found">No Saved posts were found</string>
+    <string name="explore_no_items_description">Something went wrong fetching new posts from your feed, Please try again later.</string>
+
+
+    <string name="explore_fragment_should_login_title">"Your feed is ready \n log in to Instagram to see what's new."</string>
+    <string name="explore_fragment_should_login_description">Login is required to download posts from private accounts</string>
+    <string name="login_to_instagram">Login to Instagram</string>
+
+    <string name="like_fragment_should_login_title">Your liked posts will appear here.</string>
+    <string name="like_fragment_should_login_description">Login to your instagram account, you can access your likes and bulk download them</string>
+
+    <string name="collection_fragment_should_login_title">Your saved posts will appear here.</string>
+    <string name="collection_fragment_should_login_description">Login to your instagram account, you can bulk download them all from here</string>
+
+    <string name="cookie_policy">By continuing you accept the <a href="https://sites.google.com/view/videocookiesdownloader">Cookies Policy</a> &amp; <a href="https://sites.google.com/view/videoprivacypolicydownloader">Privacy Policy</a></string>
+    <string name="privacy_link">https://sites.google.com/view/videoprivacypolicydownloader</string>
+    <string name="faq">FAQ</string>
+
+    <string name="subscription_policy">By continuing you accept the Term of use and <a href="https://sites.google.com/view/videoprivacypolicydownloader">Privacy Policy</a></string>
+    <string name="instagram_login_link"><font color="#00B508">https://</font><font color="#000000">www.instagram.com/</font></string>
+    <string name="web_agent">Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/69.0.3497.105 Mobile/15E148 Safari/605.1</string>
+    <string name="web_agent_1">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36</string>
+
+
+    <string name="ago_1month">1 month ago</string>
+    <string name="ago_months">%d months ago</string>
+    <string name="ago_1week">1w ago</string>
+    <string name="ago_weeks">%dw ago</string>
+    <string name="ago_1day">1d ago</string>
+    <string name="ago_days">%dd ago</string>
+    <string name="ago_1Minute">1m ago</string>
+    <string name="ago_minutes">%dm ago</string>
+    <string name="ago_hours">%dh ago</string>
+    <string name="ago_1hour">1h ago</string>
+    <string name="remaining_1month">1 month remaining</string>
+    <string name="remaining_months">%d months remaining</string>
+    <string name="remaining_1week">1 week remaining</string>
+    <string name="remaining_weeks">%d weeks remaining</string>
+    <string name="remaining_1day">1d remaining</string>
+    <string name="remaining_days">%dd remaining</string>
+    <string name="remaining_1Minute">1m remaining</string>
+    <string name="remaining_minutes">%dm remaining</string>
+    <string name="remaining_hours">%dh remaining</string>
+    <string name="remaining_1hour">1h remaining</string>
+
+
+    <plurals name="x_days">
+        <item quantity="one">%d Day</item>
+        <item quantity="other">%d Days</item>
+    </plurals>
+    <plurals name="x_hours">
+        <item quantity="one">%d Hour</item>
+        <item quantity="other">%d Hours</item>
+    </plurals>
+    <plurals name="x_minutes">
+        <item quantity="one">%d Minute</item>
+        <item quantity="other">%d Minutes</item>
+    </plurals>
+
+
+    <string name="ends_in_x">Ends in %s</string>
+    <string name="see_more">See More</string>
+
+    <string name="exclusive_items_await">Exclusive benefits await</string>
+
+
+    <string name="subscription_duration">Billed every %s</string>
+    <string name="subscription_duration_norenew">For %s</string>
+    <string name="subscribe_to">SUBSCRIBE TO</string>
+    <string name="subscribe_benefits_title">Subscribe now to unlock these exclusive benefits!</string>
+    <string name="benefits_one"><b>Remove</b> Ads</string>
+    <string name="benefits_two"><b>Unlimited</b> Mass downloads</string>
+    <string name="benefits_three"><b>Unlimited</b> Stories, Posts and Posts download without login</string>
+    <string name="benefits_four">Switch between <b>unlimited accounts</b></string>
+
+
+    <string name="month">month</string>
+    <string name="six_months">6 months</string>
+    <string name="twelve_months">12 months</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="fab_content_desc">Download Instagram Media</string>
+    <string name="waiting_link">Awaiting the Instagram link to start the download…</string>
+
+    <string name="how_to_download">How to Download?</string>
+    <string name="method_n">Method %1d</string>
+
+
+    <string name="step_11_description">Launch Instagram and select the share option.</string>
+    <string name="step_12_description">Choose InstaSaver to share.</string>
+    <string name="methods_divider">Second Method</string>
+    <string name="step_21_description">Launch Instagram and select the copy Link option.</string>
+    <string name="step_22_description">Open InstaSaver \n\nYour Content will be downloaded directly</string>
+
+
+    <string name="help_q_1">Why is it necessary to log in to download files?</string>
+    <string name="help_r_1">To download stories and posts from private accounts, you need to log in. However, downloading public posts does not require a login.</string>
+
+    <string name="help_q_2">Does logging into Instagram present any privacy or security risks?</string>
+    <string name="help_r_2">The login process is handled directly through Instagram\'s official website. We are not connected with Instagram and do not gather your personal information. We follow all relevant privacy regulations.</string>
+
+
+    <string name="help_q_3">How can you resolve the "Incorrect Password" error when logging in?</string>
+    <string name="help_r_3">"1- Verify whether your password contains any extra characters, such as spaces.\n2- Attempt to log in to the Instagram app.\n3- If the issue continues, try uninstalling and then reinstalling the app.\n4- If it still doesn't work, please verify that your Instagram account and password are correct, and contact support at: <a href="mailto:smartbits.apps@gmail.com">Support Email</a>"</string>
+
+
+    <string name="help_q_4">How do I cancel a subscription?</string>
+    <string name="help_r_4">To manage your subscription, go to the "Subscriptions" section in the Google Play Store.</string>
+
+    <string name="help_q_5">I Still can\'t download private post after login</string>
+    <string name="help_r_5">If you\'re already logged into your Instagram account and trying to download private posts, make sure that the account you\'re using follows the post owner. Also, double-check that you\'ve selected the correct profile from the profiles page.</string>
+    <string name="something_went_wrong">Sorry, Something went wrong</string>
+    <string name="something_went_wrong_try_later">Something went wrong, try again later.</string>
+    <string name="session_expired_login">Your session is expired, Please Login in again</string>
+    <string name="reached_limit">You\'ve made several requests. Please wait a few minutes before trying again.</string>
+    <string name="swipe_reached_limit">You\'ve made too much refresh.</string>
+    <string name="reload">Reload</string>
+
+
+    <string name="failed_to_load_data">Failed to load data, Try again in a few minutes.</string>
+    <string name="past_the_link">Past the link to Start the Download</string>
+    <string name="past_link_hint">Instagram link…</string>
+    <string name="download">Download</string>
+    <string name="please_enter_a_link">Please enter a link</string>
+    <string name="please_enter_a_valid_link">Please enter a valid media link</string>
+    <string name="users_empty_list">No profile found.</string>
+    <string name="empty_list_add_new_profile">Add New Profile</string>
+    <string name="profile_switch">Profile Switch</string>
+    <string name="profile_switch_message">Are you sure you want to switch to %s</string>
+    <string name="close">Close</string>
+    <string name="delete_profile_title">Delete profile</string>
+    <string name="delete_profile_message">Are you sure you want to delete this profile: %s</string>
+    <string name="yes">Yes</string>
+    <string name="version_not_supported">Version no longer supported</string>
+    <string name="version_not_supported_message">This version is no longer supported. We recommend upgrading to the latest version for more stable downloads and additional benefits.</string>
+    <string name="update">Update</string>
+    <string name="invalid_subscription">Invalid subscription</string>
+    <string name="invalid_subscription_message">Your subscription is invalid please contact support.</string>
+    <string name="download_reached_limit">Reached Download limit</string>
+    <string name="download_reached_limit_message">You reached the download limit without login\nYou can give a 5 stars review to get more downloads\nOr Watch an Ad</string>
+    <string name="download_reached_limit_message_without_ads_and_review">You reached the download limit without login\nYou can Subscribe for more downloads\nOr Login to Instagram for Unlimited Downloads</string>
+    <string name="download_reached_limit_message_without_review">You reached the download limit without login\nYou can watch an Ad to download this media</string>
+    <string name="give_five_stars_review">Give 5 stars Review</string>
+    <string name="watch_an_ad">Watch an Ad</string>
+    <string name="subscribe_for_unlimited">Subscribe for Unlimited Downloads</string>
+    <string name="ad_not_available_now">Ad not available for now please try again later</string>
+    <string name="can_t_open_google_review_dialog_try_again">Can\'t open google play review, Please try again later</string>
+
+    <string name="login_to_instagram_for_unlimited">Login to Instagram for Unlimited Downloads</string>
+    <string name="media_downloaded_successfully">Post downloaded successfully</string>
+
+    <string name="batch_download_menu">Mass Download Selected Items</string>
+
+    <string name="n_selected_value">%s Selected</string>
+    <string name="n_remaining">&#160; (%s Remaining)</string>
+    <string name="login_to_instagram_private_posts">Login To Instagram</string>
+    <string name="can_t_download_private_posts">Can\'t Download Private Posts</string>
+    <string name="private_post_message">It appears you\'ve entered a link for a private or non-existent post. If you\'re certain the post exists, please log in to Instagram to access and download it.</string>
+    <string name="choose_items_to_download">Choose Items to Download</string>
+    <string name="select_all">Select All</string>
+    <string name="select_at_least_one_item">Please select at least one item</string>
+    <string name="word_share">Share</string>
+    <string name="file_location">View File Location</string>
+    <string name="rename_file">Rename File</string>
+    <string name="open_in_instagram">Open in Instagram</string>
+    <string name="word_delete">Delete</string>
+    <string name="media_file_does_not_exist">Media file does not exits</string>
+    <string name="share_via">Share via…</string>
+    <string name="post_files_location">Post Files Location</string>
+    <string name="post_deleted_successfully">Post Delete Successfully</string>
+    <string name="delete_post_message">Are you sure you want to delete this post?</string>
+    <string name="delete_post_title">Delete Post</string>
+
+
+    <string name="hint_1">To download stories and posts from private accounts, you need to login.</string>
+    <string name="hint_2">Awaiting the Instagram link to start the download…</string>
+    <string name="hint_3">To add multiple profiles, choose a subscription plan that suits your needs.</string>
+    <string name="hint_4">Subscribe to a Plan for Unlimited Downloads</string>
+
+    <string name="how_to_download_subtitle">Guide on steps to download from instagram</string>
+    <string name="settings_faq">FAQ</string>
+    <string name="settings_share">Share %s With Friends</string>
+    <string name="settings_privacy">Privacy</string>
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="share_plan_text">Hey\n\nI just found this awesome app called %s, and I think you\'ll love it! It\'s super easy to use and has a lot of cool features.it\'s definitely worth checking out. Give it a try and let me know what you think!\n\nDownload it here: %s\n\nEnjoy! 😊</string>
+    <string name="play_store_url">https://play.google.com/store/apps/details?id=%s</string>
+    <string name="share_app_subject">Check Out InstaSaver</string>
+    <string name="share_media_subject">Check Out This Post</string>
+
+    <string name="subscribe_for_unlimited_mass_download">Subscribe for Unlimited Mass Downloads</string>
+
+    <string name="watch_an_ad_get_n_mass_download">Watch an Ad And Get +%s Mass Downloads</string>
+    <string name="mass_download_limit">For more Mass Downloads, consider upgrading to the Premium Version or watching an Ad.</string>
+    <string name="mass_download_limit_title">You\'ve used up your Mass Downloads. Need more?</string>
+    <string name="network_not_available">No internet</string>
+    <string name="no_internet_to_download_shared_link">No Internet to download shared link</string>
+    <string name="invalid_instagram_link">Invalid Instagram Link :(</string>
+    <string name="can_it_get_media_info">Media not found or unavailable</string>
+    <string name="select_items_to_start_download">Select items to start download</string>
+    <string name="slash">/</string>
+    <string name="audio_start_time">00:00</string>
+    <string name="file_does_not_exist">File does not exist</string>
+
+    <string name="unknown">Unknown</string>
+    <string name="file_already_exist">File already exist</string>
+    <string name="re_download_confirmation">Re-Download this Post</string>
+    <string name="re_download_confirmation_text">Are you sure you want to re-download this Post?</string>
+    <string name="cancel">Cancel</string>
+    <string name="download_started">Download started…</string>
+    <string name="wait_until_download_finish">Please wait until the download finish.</string>
+    <string name="dash">-</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="re_subscribe">Re-Subscribe</string>
+    <string name="contact_support">Something went wrong, Please contact support.</string>
+
+
+    <string name="subscription_successful">Welcome to Premium Version</string>
+    <string name="subscription_successful_message">Subscription Successful\! 🎉 Thank you for your support. Enjoy all the premium features and enhanced experience\!</string>
+    <string name="ok">OK</string>
+
+    <string name="ad_attribution" translatable="false">Ad</string>
+    <string name="ad_inspector" translatable="false">Ad Inspector</string>
+    <string name="more_menu" translatable="false">More</string>
+    <string name="privacy_settings" translatable="false">Privacy Settings</string>
+
+</resources>

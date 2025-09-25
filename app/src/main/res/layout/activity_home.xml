@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/close_selection"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_close_circle"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/n_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    tools:text="10 Selected" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/main_logo"
+                    android:layout_width="110dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/ic_inside_logo"
+                    tools:visibility="visible" />
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:animateLayoutChanges="true"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/yellow_100"
+                android:indeterminateTintMode="src_in"
+                android:progressDrawable="@drawable/home_progress"
+                android:visibility="gone"
+                tools:progress="60"
+                tools:visibility="visible" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <fragment
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/home_navigation"
+            tools:ignore="FragmentTagUsage" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Design.BottomNavigationView.Home"
+            android:background="@color/md_theme_onSecondary"
+            android:padding="0dp"
+            app:activeIndicatorLabelPadding="0dp"
+            app:itemActiveIndicatorStyle="@android:color/transparent"
+            app:itemIconSize="@dimen/_26dp"
+            app:itemRippleColor="@color/bottom_nav_ripple"
+            app:itemTextAppearanceActive="@style/BottomNavigationView.TextAppearanceActive"
+            app:itemTextAppearanceActiveBoldEnabled="true"
+            app:itemTextAppearanceInactive="@style/BottomNavigationView.TextAppearanceInActive"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/home_bottom_nav_menu" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

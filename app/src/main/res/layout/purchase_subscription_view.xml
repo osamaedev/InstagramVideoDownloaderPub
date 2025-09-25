@@ -1,0 +1,84 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/subscription_type_box_bg"
+        android:gravity="center"
+        android:minHeight="65dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/subscriptionSelectedFrameView"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/subscriptionSelectedView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:background="@drawable/subscription_unselected" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/priceLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="$ 21" />
+
+                <ImageView
+                    android:id="@+id/flag_flap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/flag_flap" />
+
+                <TextView
+                    android:id="@+id/flag_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/green_50"
+                    android:gravity="center_vertical"
+                    android:letterSpacing="0.04"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="8dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    tools:text="Save 20%" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:textSize="14sp"
+                tools:text="recurring every month" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

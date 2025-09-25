@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="_26dp">26dp</dimen>
+    <dimen name="benefit_item_width">22dp</dimen>
+    <dimen name="benefit_item_height">22dp</dimen>
+    <dimen name="settings_icon_width_45dp">36dp</dimen>
+    <dimen name="settings_icon_height_45dp">36dp</dimen>
+
+</resources>

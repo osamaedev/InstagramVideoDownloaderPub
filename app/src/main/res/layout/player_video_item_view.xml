@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+
+        <FrameLayout
+            android:id="@+id/player"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:padding="0dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <org.videolan.libvlc.util.VLCVideoLayout
+                android:id="@+id/view_vlc_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:padding="0dp" />
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_paused"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:src="@drawable/ic_play_pause"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/player"
+            app:layout_constraintTop_toTopOf="@id/player"
+            tools:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/file_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/file_does_not_exist"
+            android:textSize="12sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/progress_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="gone">
+
+            <TextView
+                android:id="@+id/progress_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="4dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="50%" />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                app:cpb_background_progressbar_color="@color/gnt_white"
+                app:cpb_background_progressbar_width="4dp"
+                app:cpb_progress_direction="to_right"
+                app:cpb_progressbar_color_end="@color/background_orange"
+                app:cpb_progressbar_color_start="@color/background_yellow"
+                app:cpb_progressbar_width="4dp"
+                app:cpb_round_border="false"
+                tools:cpb_progress="15" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:padding="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/line_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/line_1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/download"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_download" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/more"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_more" />
+
+        </LinearLayout>
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/circularRevealCardView"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:padding="2dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="38dp"
+            app:layout_constraintBottom_toTopOf="@+id/line_2"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/media_user_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:src="@drawable/ic_launcher_background" />
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/media_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/circularRevealCardView"
+            app:layout_constraintStart_toEndOf="@+id/circularRevealCardView"
+            app:layout_constraintTop_toTopOf="@+id/circularRevealCardView"
+            tools:text="media_username" />
+
+        <SeekBar
+            android:id="@+id/progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:backgroundTint="@android:color/white"
+            android:padding="4dp"
+            android:progressTint="@android:color/white"
+            android:splitTrack="false"
+            android:thumb="@android:color/transparent"
+            android:thumbTint="@android:color/transparent"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/line_2"
+            tools:progress="20" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="45dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/line_1"
+            app:layout_constraintStart_toStartOf="@id/circularRevealCardView"
+            app:layout_constraintTop_toTopOf="@id/progress">
+
+            <kr.co.prnd.readmore.ReadMoreTextView
+                android:id="@+id/caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:visibility="gone"
+                app:readMoreMaxLine="4"
+                app:readMoreText="show more"
+                tools:visibility="visible" />
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.82" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.86" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

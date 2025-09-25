@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "533255043997",
+    "project_id": "instasaver-4e282",
+    "storage_bucket": "instasaver-4e282.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533255043997:android:f4abb76dec1e0877d70d74",
+        "android_client_info": {
+          "package_name": "com.video.instagram.story.reels.downloader.ig"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9MI0XIH4c5pgIt_4Q74ciNrtafrAXD3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

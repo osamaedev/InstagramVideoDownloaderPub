@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+    <string name="media_information" translatable="false">Media Information</string>
+    <string name="mi_player" translatable="false">Player</string>
+    <string name="mi_media" translatable="false">Media</string>
+    <string name="mi_profile_level" translatable="false">Profile level</string>
+    <string name="mi_pixel_format" translatable="false">Pixel format</string>
+    <string name="mi_resolution" translatable="false">Resolution</string>
+    <string name="mi_length" translatable="false">Length</string>
+    <string name="mi_stream_fmt1" translatable="false">Stream #%d</string>
+    <string name="mi_type" translatable="false">Type</string>
+    <string name="mi_language" translatable="false">Language</string>
+    <string name="mi_codec" translatable="false">Codec</string>
+    <string name="mi_frame_rate" translatable="false">Frame rate</string>
+    <string name="mi_bit_rate" translatable="false">Bit rate</string>
+    <string name="mi_sample_rate" translatable="false">Sample rate</string>
+    <string name="mi_channels" translatable="false">Channels</string>
+    <string name="mi__selected_video_track" translatable="false">*</string>
+    <string name="mi__selected_audio_track" translatable="false">*</string>
+    <string name="mi__selected_subtitle_track" translatable="false">*</string>
+
+
+    <string name="VideoView_ar_aspect_fit_parent" translatable="false">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent" translatable="false">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_wrap_content" translatable="false">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent" translatable="false">Free / Fill parent</string>
+    <string name="VideoView_ar_16_9_fit_parent" translatable="false">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent" translatable="false">4:3 / Fit parent</string>
+
+
+    <string name="TrackType_video" translatable="false">Video</string>
+    <string name="TrackType_audio" translatable="false">Audio</string>
+    <string name="TrackType_subtitle" translatable="false">Subtitle</string>
+    <string name="TrackType_timedtext" translatable="false">Timed text</string>
+    <string name="TrackType_metadata" translatable="false">Meta data</string>
+    <string name="TrackType_unknown" translatable="false">Unknown</string>
+
+    <string name="show_info" translatable="false">Info</string>
+    <string name="vdec" translatable="false">vdec</string>
+    <string name="fps" translatable="false">fps</string>
+    <string name="v_cache" translatable="false">v-cache</string>
+    <string name="a_cache" translatable="false">a-cache</string>
+    <string name="load_cost" translatable="false">load-cost</string>
+    <string name="seek_cost" translatable="false">seek_cost</string>
+    <string name="seek_load_cost" translatable="false">seek_load_cost</string>
+    <string name="tcp_speed" translatable="false">tcp_speed</string>
+    <string name="bit_rate" translatable="false">bit_rate</string>
+
+
+
+
+</resources>

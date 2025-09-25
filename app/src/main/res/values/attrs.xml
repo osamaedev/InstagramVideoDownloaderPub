@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="colorWindowBackground" format="color" />
+
+    <attr name="hasLightBackground" format="boolean" />
+    <attr name="barForegroundColor" format="color" />
+    <attr name="barPendingColor" format="color" />
+    <attr name="barBackgroundColor" format="color" />
+
+    <declare-styleable name="InstaDownloaderProgressBar">
+        <attr name="barForegroundColor" />
+        <attr name="barPendingColor" />
+        <attr name="barBackgroundColor" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SubscriptionOptionView">
+        <attr name="recurringText" format="string" />
+        <attr name="flagText" format="string" />
+    </declare-styleable>
+
+</resources>

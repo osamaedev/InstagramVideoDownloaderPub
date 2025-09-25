@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardElevation="2dp"
+            app:rippleColor="@color/md_theme_onSecondaryContainer">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/circularRevealCardView"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@null"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardCornerRadius="70dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/user_picture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:src="@drawable/ic_launcher_background" />
+
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/linearLayoutCompat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:gravity="center|start"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/delete"
+                    app:layout_constraintStart_toEndOf="@+id/circularRevealCardView"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginVertical="2dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        tools:text="Hello World" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginVertical="2dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:textSize="14sp"
+                        tools:text="Username" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/storage_path"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginVertical="2dp"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:textSize="14sp"
+                        tools:text="Username" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/is_selected"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/ic_user_selected" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/delete"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_delete_user"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+</layout>

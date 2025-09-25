@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RelativeLayout
+            android:id="@+id/progress_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/progress_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="4dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:text="50%" />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                app:cpb_background_progressbar_color="@color/gnt_white"
+                app:cpb_background_progressbar_width="4dp"
+                app:cpb_progress="15"
+                app:cpb_progress_direction="to_right"
+                app:cpb_progressbar_color_end="@color/background_orange"
+                app:cpb_progressbar_color_start="@color/background_yellow"
+                app:cpb_progressbar_width="4dp"
+                app:cpb_round_border="false" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/circularRevealCardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:textSize="11sp"
+                android:paddingHorizontal="2dp"
+                android:id="@+id/current_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:textColor="@android:color/white"
+                android:text="@string/dash" />
+
+            <TextView
+                android:textSize="11sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slash" />
+
+            <TextView
+                android:textSize="11sp"
+                android:paddingHorizontal="2dp"
+                android:id="@+id/max_pages"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="2dp"
+                android:text="@string/dash" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:padding="4dp"
+            app:layout_constraintBottom_toTopOf="@+id/line_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/line_1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/download"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_download" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/more"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_more" />
+
+        </LinearLayout>
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:id="@+id/circularRevealCardView"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:padding="2dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="38dp"
+            app:layout_constraintBottom_toTopOf="@+id/line_2"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/media_user_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:src="@drawable/ic_launcher_background" />
+
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/media_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/circularRevealCardView"
+            app:layout_constraintStart_toEndOf="@+id/circularRevealCardView"
+            app:layout_constraintTop_toTopOf="@+id/circularRevealCardView"
+            tools:text="media_username" />
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="55dp"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/line_1"
+            app:layout_constraintStart_toStartOf="@id/circularRevealCardView"
+            app:layout_constraintTop_toTopOf="@id/line_2">
+
+            <kr.co.prnd.readmore.ReadMoreTextView
+                android:id="@+id/caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:visibility="gone"
+                app:readMoreMaxLine="4"
+                app:readMoreText="show more"
+                tools:visibility="visible" />
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.85" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.86" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

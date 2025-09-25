@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Material3.Button.ElevatedButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cornerRadius="8dp"
+    android:backgroundTint="@color/maroon_100"
+    tools:text="Here delete">
+
+</Button>

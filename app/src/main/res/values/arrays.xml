@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hints">
+        <item>@string/hint_1</item>
+        <item>@string/hint_2</item>
+        <item>@string/hint_3</item>
+        <item>@string/hint_4</item>
+    </string-array>
+</resources>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/appCompatTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/subscribe_to"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/premium"
+                    android:layout_width="250dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="15dp"
+                    app:layout_constraintEnd_toEndOf="@id/appCompatTextView"
+                    app:layout_constraintStart_toStartOf="@id/appCompatTextView"
+                    app:layout_constraintTop_toBottomOf="@id/appCompatTextView"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/premium" />
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/premium_icon_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:rotation="320"
+                    app:layout_constraintBottom_toBottomOf="@+id/premium"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline"
+                    app:layout_constraintTop_toTopOf="@+id/premium"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/prem_1" />
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/premium_icon_2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:rotation="40"
+                    app:layout_constraintBottom_toBottomOf="@+id/premium"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_1"
+                    app:layout_constraintTop_toTopOf="@+id/premium"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/prem_1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/subscribe_benefits_title"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="6dp"
+                    android:text="@string/subscribe_benefits_title"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/premium"
+                    app:layout_constraintStart_toStartOf="@+id/premium"
+                    app:layout_constraintTop_toBottomOf="@+id/premium" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/appCompatImageView"
+                    android:layout_width="@dimen/benefit_item_width"
+                    android:layout_height="@dimen/benefit_item_height"
+                    android:layout_marginTop="25dp"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_3"
+                    app:layout_constraintTop_toBottomOf="@+id/subscribe_benefits_title"
+                    app:srcCompat="@drawable/premium_benefit" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/benefits_1"
+                    style="@style/BenefitsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="start|center"
+                    android:text="@string/benefits_one"
+                    app:layout_constraintBottom_toBottomOf="@id/appCompatImageView"
+                    app:layout_constraintEnd_toStartOf="@id/guideline_4"
+                    app:layout_constraintStart_toEndOf="@id/appCompatImageView"
+                    app:layout_constraintTop_toTopOf="@id/appCompatImageView" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/appCompatImageView_1"
+                    android:layout_width="@dimen/benefit_item_width"
+                    android:layout_height="@dimen/benefit_item_height"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_3"
+                    app:layout_constraintTop_toBottomOf="@+id/benefits_1"
+                    app:srcCompat="@drawable/premium_benefit" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/benefits_2"
+                    style="@style/BenefitsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="start|center"
+                    android:text="@string/benefits_two"
+                    app:layout_constraintBottom_toBottomOf="@id/appCompatImageView_1"
+                    app:layout_constraintEnd_toStartOf="@id/guideline_4"
+                    app:layout_constraintStart_toEndOf="@id/appCompatImageView_1"
+                    app:layout_constraintTop_toTopOf="@id/appCompatImageView_1" />
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/appCompatImageView_2"
+                    android:layout_width="@dimen/benefit_item_width"
+                    android:layout_height="@dimen/benefit_item_height"
+                    android:layout_marginTop="19dp"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_3"
+                    app:layout_constraintTop_toBottomOf="@+id/benefits_2"
+                    app:srcCompat="@drawable/premium_benefit" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/benefits_3"
+                    style="@style/BenefitsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="start|center"
+                    android:lineSpacingExtra="2dp"
+                    android:lines="2"
+                    android:text="@string/benefits_three"
+                    app:layout_constraintBottom_toBottomOf="@id/appCompatImageView_2"
+                    app:layout_constraintEnd_toStartOf="@id/guideline_4"
+                    app:layout_constraintStart_toEndOf="@id/appCompatImageView_2"
+                    app:layout_constraintTop_toTopOf="@id/appCompatImageView_2" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/appCompatImageView_3"
+                    android:layout_width="@dimen/benefit_item_width"
+                    android:layout_height="@dimen/benefit_item_height"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toStartOf="@+id/guideline_3"
+                    app:layout_constraintTop_toBottomOf="@+id/benefits_3"
+                    app:srcCompat="@drawable/premium_benefit" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/benefits_4"
+                    style="@style/BenefitsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="start|center"
+                    android:text="@string/benefits_four"
+                    app:layout_constraintBottom_toBottomOf="@id/appCompatImageView_3"
+                    app:layout_constraintEnd_toStartOf="@id/guideline_4"
+                    app:layout_constraintStart_toEndOf="@id/appCompatImageView_3"
+                    app:layout_constraintTop_toTopOf="@id/appCompatImageView_3" />
+
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/plans_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toStartOf="@id/guideline_4"
+                    app:layout_constraintStart_toStartOf="@id/guideline_3"
+                    app:layout_constraintTop_toBottomOf="@id/benefits_4">
+
+                    <androidx.compose.ui.platform.ComposeView
+                        android:id="@+id/progress_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+
+
+                    <com.instagram.video.downloader.common.ui.views.SubscriptionOptionView
+                        android:id="@+id/subscription_1_month"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:recurringText="@string/month"
+                        tools:visibility="visible" />
+
+
+                    <com.instagram.video.downloader.common.ui.views.SubscriptionOptionView
+                        android:id="@+id/subscription_6_months"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:visibility="gone"
+                        app:recurringText="@string/six_months" />
+
+
+                    <com.instagram.video.downloader.common.ui.views.SubscriptionOptionView
+                        android:id="@+id/subscription_1_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:visibility="gone"
+                        app:recurringText="@string/twelve_months" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/subscribe"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="40dp"
+                    android:gravity="center"
+                    android:text="@string/subscribe"
+                    android:textColor="@color/md_theme_onBackground"
+                    android:textSize="16sp"
+                    app:backgroundTint="@color/md_theme_inversePrimary"
+                    app:cornerRadius="7dp"
+                    app:iconTint="@null"
+                    app:layout_constraintEnd_toEndOf="@id/plans_container"
+                    app:layout_constraintStart_toStartOf="@id/plans_container"
+                    app:layout_constraintTop_toBottomOf="@id/plans_container" />
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/privacy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="@string/subscription_policy"
+                    app:layout_constraintEnd_toEndOf="@id/subscribe"
+                    app:layout_constraintStart_toStartOf="@id/subscribe"
+                    app:layout_constraintTop_toBottomOf="@id/subscribe" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@null"
+                    app:layout_constraintEnd_toEndOf="@id/privacy"
+                    app:layout_constraintStart_toStartOf="@id/privacy"
+                    app:layout_constraintTop_toBottomOf="@id/privacy" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.06" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.94" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.27" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.73" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
